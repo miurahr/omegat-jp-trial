@@ -15,6 +15,17 @@ systemProp.http.proxyUser=xxxx
 systemProp.http.proxyPassword=xxx
 ```
 
+## Source materials
+
+Source materials are abled to be updated from OmegaT project code.
+OmegaT project code is fetched by git submodule strategy.
+There is a utility task for updating source from original code.
+
+```bash
+$ git submodule update
+$ ./gradlew update
+```
+
 ## How to generate translation files
 
 Please call Gradle build system `gradlew` command from console.
