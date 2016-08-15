@@ -6,6 +6,28 @@ dependencies {
            fileTree('buildSrc/lib')
 }
 
+task update(type: Copy) {
+    destinationDir new File(projectDir, 'source')
+    into('doc_src') {
+        from 'omegat-code/doc_src'
+        include 'en/**/*'
+    }
+    into('release') {
+        from 'omegat-code/release'
+            include '**/Localizable.strings'
+            include '**/CostomMessages.ini'
+            include 'readme.txt'
+    }
+    into('scripts') {
+        from 'omegat-code/scripts'
+            include '**/*.properties'
+    }
+    into('src') {
+        from 'omegat-code/src'
+            include 'org/omegat/Bundle.properties'
+    }
+}
+
 task wrapper(type: Wrapper) {
   gradleVersion = '2.14.1'
 }
