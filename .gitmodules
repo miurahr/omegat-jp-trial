@@ -1,0 +1,3 @@
+[submodule "omegat-code"]
+	path = omegat-code
+	url = https://github.com/omegat-org/omegat.git
