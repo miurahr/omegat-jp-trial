@@ -14,13 +14,14 @@ task update(type: Copy) {
     }
     into('release') {
         from 'omegat-code/release'
-            include '**/Localizable.strings'
+            include '**/en.lproj/Localizable.strings'
             include '**/CostomMessages.ini'
             include 'readme.txt'
     }
     into('scripts') {
         from 'omegat-code/scripts'
             include '**/*.properties'
+            exclude '**/*_??.properties'
     }
     into('src') {
         from 'omegat-code/src'
