@@ -68,37 +68,6 @@ your platform to internet. If you are behind proxy server or firewall, please
 refer Gradle documentation how to configure Gradle for network connections.
 It will download some jar files from https://jcenter.bintray.com repository.
 
-## How to translate
-
-The project use OmegaT, Computer Aided Translation tool.
-OmegaT is an Open Source Software and freely available for translators.
-It is a kind of a translation memory.
-
-The repository is designed to work with OmegaT team features. This means
-translators who work on the repository are collaborative team.
-
-## Contributions
-
-Translation updates are not supporeted to merge with PR. Instead of push a request,
-please ask us to join as a member who can write a repository.
-
-OmegaT has a team feature. It automatically push translation contribution
-onto github repository.
-
-If you want to join, please leave a issue to express your will.
-
-We use custom version of OmegaT Version 4.0 snapshot for automation of the project.
-You should use gradle to launch custom OmegaT;
-
-```
-$ ./gradlew omegat
-```
-
-It automatically starts OmegaT GUI and prepares environment for you.
-
-Bundled version of OmegaT is version 4.0 snapshot with small modifications.
-One is a proxy configuration to follow system settings. Other is an addition of option
-for unknown HTML entities.
 
 ## License
 
